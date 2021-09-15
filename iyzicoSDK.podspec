@@ -143,7 +143,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'CocoaLumberjack/Core', '~> 3.7.2'
 
   spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64, x86_64-apple-ios-simulator, x86_64'
   }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
