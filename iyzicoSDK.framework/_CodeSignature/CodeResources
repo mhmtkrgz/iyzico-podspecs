@@ -6,35 +6,35 @@
 	<dict>
 		<key>AlertManager.nib</key>
 		<data>
-		OdHmIaJxNeNtwhFsym011sJmYsE=
+		E0ifrcMfwz2FMhTlEz5mWibpBcs=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		UYBnyF6AavkPKb7o99aa09KhD1g=
+		QJtWUicTDz/XoDzku1w2xmdIMQw=
 		</data>
 		<key>BankCell.nib</key>
 		<data>
-		IviERBpMPLRTLDLZZLcGVGu4ZN8=
+		IHiD1ZnLV8HiCvx1FYdV/59AQ0Y=
 		</data>
 		<key>BankDetailCell.nib</key>
 		<data>
-		bP9m0IDLmXHH/6k1OApILVL2Qag=
+		QtX8Wua1BhbbIO7r1qbZJNyTzUE=
 		</data>
 		<key>BottomAlertVC.nib</key>
 		<data>
-		34ZHARZoxmUVdYftUGj1+2cwW0E=
+		TozNeJ/B0AHvDRSkn1nJRfMtdG8=
 		</data>
 		<key>ButtonCell.nib</key>
 		<data>
-		Iba0MYjfs/MRmpFgH/a9pZPjlsM=
+		/WClcAQx/dhmVQDIC76eEX+4IVA=
 		</data>
 		<key>CreditCardCell.nib</key>
 		<data>
-		pWNkEXRSKLOsvD4S1oqpiihPBm8=
+		iESnArp+qhJIj0ezA//XgVc6jTQ=
 		</data>
 		<key>EmailSupportVC.nib</key>
 		<data>
-		nUO6D39mnyeQxsSb52ILH92LXIo=
+		z9qHrQStUkJAMQ7/cYQ+KAs+xUY=
 		</data>
 		<key>Headers/iyzicoSDK-Swift.h</key>
 		<data>
@@ -50,107 +50,107 @@
 		</data>
 		<key>InfoCell.nib</key>
 		<data>
-		UbjeQudpNqgS6Ox3IqlcFx7HwE4=
+		ImNt9LGA1CehsuEu0sr2rr9u400=
 		</data>
 		<key>InstallmentCell.nib</key>
 		<data>
-		0uvFhSG+LnSUqbXEL+q/9JZAZmM=
+		0NYJvFRwyFBFDssJPY5eVH7Vrpg=
 		</data>
 		<key>InstallmentTableCell.nib</key>
 		<data>
-		+c98iZyKC8NvuUZj7KwESdn3ViI=
+		1IsTYvSWwWEf8E63eo48XeiEh/Q=
 		</data>
 		<key>IyzicoAmountView.nib</key>
 		<data>
-		fxFPoMkZx67PZMIX7lTIFnjyb8k=
+		0hcOKhtNw9ciRh8LWux6NbiDwUY=
 		</data>
 		<key>IyzicoButton.nib</key>
 		<data>
-		83nTjZylQkQIeSfbFEeT6nzopNg=
+		bf6FlejUbs8SaK3pHwq+y0fIcqY=
 		</data>
 		<key>IyzicoCardView.nib</key>
 		<data>
-		2n5bSoMAoGBofuXAH5IasrtoA90=
+		rqUU8F0Lo3TFMz4E6izTMO2gbPM=
 		</data>
 		<key>IyzicoCheckBox.nib</key>
 		<data>
-		JGF6e1YsnIW0Vl6spJpdzK5Y6xQ=
+		ODQxLUQGkNOOUGoOErgPkN5j3J8=
 		</data>
 		<key>IyzicoContactView.nib</key>
 		<data>
-		NBBLk3fPHMKJyEzWCUTl4IFk8Xc=
+		/12Qb0pylBC1HPgTLepapjWxpwA=
 		</data>
 		<key>IyzicoDeliveryAdressView.nib</key>
 		<data>
-		CnSnZoRAnllB+tMJlgicT7pjeiw=
+		tXvd5ytakZAtHGBs/1F+y1Jdij4=
 		</data>
 		<key>IyzicoDragDissmisView.nib</key>
 		<data>
-		1pUhliRhAhM7/XKznyC1I/vtSKU=
+		qHujBecaNCgZQA3iChXtgYcjRus=
 		</data>
 		<key>IyzicoDropDown.nib</key>
 		<data>
-		dgcrvUmnpF5N2oCwtdmgh11tgIg=
+		XV7iPDfgQA7FBh1qJoXQcGWu2cs=
 		</data>
 		<key>IyzicoEFTDetailVC.nib</key>
 		<data>
-		GBE7rFeKGDunG4ssFkoHrc1dr/Q=
+		pe73W9j+7Jk6GcuUkearay3hEk0=
 		</data>
 		<key>IyzicoHomeVC.nib</key>
 		<data>
-		6Ck99XD1N3DzPB7cmCmU9p7iH0k=
+		8yasQREIZrHj5mA1Dz9X1zt+JRU=
 		</data>
 		<key>IyzicoInfoVC.nib</key>
 		<data>
-		x6bciB9MwBumEOJW84GyCu026y0=
+		o53WsPN8v+BLOhIWGFUCRDn8Ktk=
 		</data>
 		<key>IyzicoInfoView.nib</key>
 		<data>
-		HmMTH4rxr9imT+2NN9ZqKx6R0FE=
+		Y4glbZWEllkckskVfVldFk+8YmY=
 		</data>
 		<key>IyzicoMemberView.nib</key>
 		<data>
-		N8Xlcun8g54pFgLiNdsKlrWrldo=
+		Oa83G0h2x7Ml+KR4ulFGh4dfVOk=
 		</data>
 		<key>IyzicoMenuHeaderView.nib</key>
 		<data>
-		XMuscNpGTSFELz4HBRQ+gGMiGl0=
+		KUznmrtKuwVZwmpVJMo5Sl35PyY=
 		</data>
 		<key>IyzicoNavBar.nib</key>
 		<data>
-		Wfm2D3R7OPIQ6arFpoxz+7FR6LE=
+		EnjUJpJUpNL5EgtZD1y9nlKUaB4=
 		</data>
 		<key>IyzicoPopUpView.nib</key>
 		<data>
-		+NXSX7FW8su9ilpGq9rywQC2dSM=
+		G4luadli/0k7b0xtMQLHRvLAsqI=
 		</data>
 		<key>IyzicoProductInfoView.nib</key>
 		<data>
-		2v89hq9evozxuaZ3MHt3pUsw4j8=
+		IBrHL/0NZyxpjoZreah95TimItg=
 		</data>
 		<key>IyzicoSectionView.nib</key>
 		<data>
-		Tz/b3Ibm2SDC3iKXiuIR4SsnmIE=
+		PygEQLhT9jB4Zxq3YmsWpWYO0MA=
 		</data>
 		<key>IyzicoTermAndCond.nib</key>
 		<data>
-		91g6MfeXSmJiEqggsf+k7BEDVMM=
+		0CEi6Z9DmM6rpbwWRmaOG5GVCYc=
 		</data>
 		<key>IyzicoTextArea.nib</key>
 		<data>
-		EbTqMeNCY949oS29Enx/+fSfsGg=
+		KWvnU4nUxWb8MP+SAoTRBe14hIw=
 		</data>
 		<key>IyzicoTextInput.nib</key>
 		<data>
-		V82bpnCT2oTxQqd+A1KMKPvF26Y=
+		UKSgGIGTDR91tIwkVLSGpHDQTSQ=
 		</data>
 		<key>IyzicoTransferVC.nib</key>
 		<data>
-		RLK3/rc5bO9PFx3DpA+8QfG1ACM=
+		8temBy4MxlcyZsKFVOjdqqDEMDQ=
 		</data>
 		<key>MainVC.nib</key>
 		<data>
-		yGdwBEOJv7f94V8SZ9v1yAO8UNk=
+		qjlFK4j6h5ARdxmj8iCq01WV6tg=
 		</data>
 		<key>MarkPro-Bold.otf</key>
 		<data>
@@ -182,31 +182,39 @@
 		</data>
 		<key>MemberVC.nib</key>
 		<data>
-		2PgCgmyp2cGn95JE4pBP7YriLGE=
+		a6M59Qde944mhh5RNMyODvyJVFY=
+		</data>
+		<key>Modules/iyzicoSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<data>
+		sXHA3sysDtZ9j4bFvZCdV49/C8k=
+		</data>
+		<key>Modules/iyzicoSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<data>
+		sXHA3sysDtZ9j4bFvZCdV49/C8k=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6pi9h1AlERWgipicSNdTifAwqv0=
+		TyHB00HuV6Zf7S0fQjbJQuaT05Q=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hncXpgHT8ECc2ERmLRo+H1qlxM8=
+		o6W+n7cpJ9HZ4YTluv/4BMKxtgk=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Rlb8B45LNcC+Md/Ufd+SlssFEuo=
+		vq4YwdTSE5jwqi/46bgTm2jvN8w=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		6pi9h1AlERWgipicSNdTifAwqv0=
+		TyHB00HuV6Zf7S0fQjbJQuaT05Q=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		hncXpgHT8ECc2ERmLRo+H1qlxM8=
+		o6W+n7cpJ9HZ4YTluv/4BMKxtgk=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Rlb8B45LNcC+Md/Ufd+SlssFEuo=
+		vq4YwdTSE5jwqi/46bgTm2jvN8w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -214,51 +222,51 @@
 		</data>
 		<key>MyAccountCell.nib</key>
 		<data>
-		fFzqOfh2WDy3OoZyMLX55tNI9Wo=
+		YBwA9T/brkoLzLLJX6U+QiK5A6k=
 		</data>
 		<key>NewCardCell.nib/objects-14.0+.nib</key>
 		<data>
-		+qb6/m2MWjtv3IHUl36P5nn8UrU=
+		glaZPojalWl3RjO1snW8iBRYCfE=
 		</data>
 		<key>NewCardCell.nib/runtime.nib</key>
 		<data>
-		/Ay/TOZY2dsxdWQ2SK6zLOPPMXE=
+		L092mkAtausD7YXcFBCRlAseFpM=
 		</data>
 		<key>NewMemberVC.nib</key>
 		<data>
-		VsBs6sKPFYmIbwciswUiepERlcw=
+		xgk4QnFVJh+5xKgxgGm8taipsF0=
 		</data>
 		<key>NotaMemberVC.nib</key>
 		<data>
-		EeX8dN8pvgOw480GA6g8eFjLfm0=
+		PIEV6CS4L1YThacqGyGX15xgZa0=
 		</data>
 		<key>OTPVC.nib</key>
 		<data>
-		LYytc9/UMsiZtSOP0mk27jxsuxo=
+		6D9EOvDmT1s/OHQdj7SRcKChx2Q=
 		</data>
 		<key>PhoneVC.nib</key>
 		<data>
-		zKdiMQAV0LTxNM2QgGRC8ea9TnU=
+		T56eljGplEKv4msds5yxNOez1L8=
 		</data>
 		<key>ResultCell.nib</key>
 		<data>
-		EJbYZxy7TQWm1PtklH/RX0K2gVc=
+		YpvlxUPTpoKwANlYZpeIYunRQ4A=
 		</data>
 		<key>ResultVC.nib</key>
 		<data>
-		yR+5paN9gn2b83V5MRK1m8irCs0=
+		ZyipPj9NRtJ1aRPoHyayAbdWEPI=
 		</data>
 		<key>SettlementVC.nib</key>
 		<data>
-		M1yDt8NDJ0vGbZzzE87eDtuIMss=
+		oTjL1qn1Yl5feTCBmdRJDyI+eio=
 		</data>
 		<key>TitleCell.nib</key>
 		<data>
-		sCFs0iSa5VtVBqZNU6gxTZPB7XA=
+		Mw5VvZUiMWVobeneGTtlQoyRLQw=
 		</data>
 		<key>WebVC.nib</key>
 		<data>
-		gboF3qXmk5EA76XdrOzwf6I/Lgw=
+		hquFUFhTgGyAA4aGBRtKDoUvWzw=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -301,56 +309,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Zeoei4J4rriDub3m38+epbsv2Sd8nY0e09OAIrB6ms=
+			VNSbLGYJKd2gHvL1V31LeGXPr9tEgzUVkfRzicLs2H8=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y74ZTt/0fPHb1zUUwJl6hJfOW802wdpt8aYz7Z13wYY=
+			6/QcTs9HrZTqkw+PNep3i5bfFbq42ry/J51pkeH4Ee0=
 			</data>
 		</dict>
 		<key>BankCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xSL5fDPdNAGVw5XMM0mYyH21DZlrMp0PlYWI24+2D/8=
+			DquMRj2EnPYeNph/oE7M5knlOsvKj98LUbZ6kfTs1Ac=
 			</data>
 		</dict>
 		<key>BankDetailCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzPMh1ADCqQHn8td0wbw8VWJYntZAsieLWenGlJDj0Y=
+			pjFS2HZueRjqFKIemfTBw2SoQsTdIUfP/o+QSJA2zss=
 			</data>
 		</dict>
 		<key>BottomAlertVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rh0j4DIvKxVlsv3Ocfb76P+SeaKovK9OXVki5mDd51k=
+			bf8JdAFpdSblt3riTQsKe6LIxyH7pJK6aFwnTiyBk/A=
 			</data>
 		</dict>
 		<key>ButtonCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZzwVSGreEPuyfjIhdVGM1i/FTqHbocT+2V8dvHkZYc=
+			G2NNW9nhgYFMc+ynchkN+XkupQDoSxiXnCXV5an6KVY=
 			</data>
 		</dict>
 		<key>CreditCardCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I4DhWB22NuZ5rYq7t9Wyxt9+/G35qZTiZwF5I6bb6/8=
+			Dius847elXPq/I8H4u2OeTH1XbeujhddSTeWmsvIUc0=
 			</data>
 		</dict>
 		<key>EmailSupportVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JsY3a4sE57HJWUoaUOAoONHdG7tJP2o66QPlzOdcUvo=
+			ZHkFhBB/YdM/CU5jx6vwdIP05DDmbDI7dB4lAuZZME8=
 			</data>
 		</dict>
 		<key>Headers/iyzicoSDK-Swift.h</key>
@@ -371,182 +379,182 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bFWbb8FX46NaQ3l6U/wF8aFUWa/dKD4UFbmGpfXIT8o=
+			MlISCYJDUTHBBqHdW/V+oaS3N+IzE6D3tTNgtVmbGFo=
 			</data>
 		</dict>
 		<key>InstallmentCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LRQ+gLhQSZUX0TMtnEK5TgcAdad+THXXaFLsxjuIkLE=
+			mLrqy8O+UYTYt2f4Of77wIy0uJ2uwQHgOj+ynmKlzVE=
 			</data>
 		</dict>
 		<key>InstallmentTableCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UPm8loYq9Gk8eV6/Z7eG++M/YpJn97vg7O1JRsF0+jo=
+			dxRLWqm3Q+3gWFi73/ZOo0UaDa/5eXfrMKpSuOb/ntE=
 			</data>
 		</dict>
 		<key>IyzicoAmountView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FOrrzPgYdXsrtPVoe+Ad1R+q7duuLV8ebYAQUv/iSjs=
+			f7hXdQ3uYe3ArOorCAL9Ygq/JvC5BwEkMK6oxwvW8I4=
 			</data>
 		</dict>
 		<key>IyzicoButton.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GO0fwWYnqrftF2tULFKgmA9jSCgTCoVSTE+DPq08jPA=
+			cjtIjAth45kACLONSyq0IvdK8INeAKGLT2EGmsuU2Uc=
 			</data>
 		</dict>
 		<key>IyzicoCardView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ze8lhS3nW5TWw27B6UKsDOkZ7Hhql6K2vVTNm5p2SM=
+			TpWvue728DaR3kUeV+LPArYMQWCUeSowfZpBpJajwPY=
 			</data>
 		</dict>
 		<key>IyzicoCheckBox.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jtmT1sUlVNObUNDDF3k5XdB9ebK695VWeiN3QnoAXRk=
+			X+pS0VB78708+Wok0IThy5CkOQ90Di87NRAnGo0fc90=
 			</data>
 		</dict>
 		<key>IyzicoContactView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iEN4sBuXinV9lnUN6xCyqoXANi3B4bTPJPzdTh81Tk4=
+			/GEeHGFOlMenQKmjdXav2KVb7hS62wU/INsnGaexrz4=
 			</data>
 		</dict>
 		<key>IyzicoDeliveryAdressView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeQBzbcsyqnEHtxxIiX50J9BK0RZNxLQJ4TdKb4xG4g=
+			cyADsXaJYMKWoBb39Hd+ySn+FjZ/yFhPp/z8oWvdksA=
 			</data>
 		</dict>
 		<key>IyzicoDragDissmisView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1aIhk/0pp9Qe3ZLMT2ctZyhS7lNRKVu6gtgiJmpakXs=
+			OwRtBWycoaP8UxDCHX4PWPpM/duhifF1wDGzrGRFA/g=
 			</data>
 		</dict>
 		<key>IyzicoDropDown.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ELSNOOyTGgA25XXFo5YJ1iXYZu3U4xKCsYFV1qTuScY=
+			OM2zeLStO4P+uBPLghzt9/kXF6hBZMpNrwPkb5mcEzw=
 			</data>
 		</dict>
 		<key>IyzicoEFTDetailVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1d5YF8Cw96hBuKP6Lg4YwfnvfnM0IfADRRKPLHiDi3k=
+			hU5gpNNpodtVfKYRp7Eu0RvOxiQkloic6k8bq5ay/Iw=
 			</data>
 		</dict>
 		<key>IyzicoHomeVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPPNoptjttvvSjSs6aHDOHP4FRytuuaWkmz/PB67QjQ=
+			qPzK3qzReIQhHbYG4TrHV4004e6yxwOk99a3vUHrrXc=
 			</data>
 		</dict>
 		<key>IyzicoInfoVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FVkmLntSmYYARRPXaqedr4lNgic2jUhCQ7CQ95V7Bm8=
+			+7aiw0HeHafxcfSAG1wiK0WzWEjEnKn4l6C74M35UvI=
 			</data>
 		</dict>
 		<key>IyzicoInfoView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iOq+s3wbJ8+N55SnjBTQlIeYMOIBi3p54FsYcGZ4Xnw=
+			AvmrA/WLDCQhrZpLSKd5whNXjbPJ7xEH6MiPCRYRWpQ=
 			</data>
 		</dict>
 		<key>IyzicoMemberView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hG4+dQTnD+/QCgme7WCUkap9WUCMDXltFWH0IQpszVc=
+			TobG+iyFdV/NKsyLCQojBikgP1z8fiF1PKkdEvkPf94=
 			</data>
 		</dict>
 		<key>IyzicoMenuHeaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ThXJU3Qd2Qn5kNVxDrROqt+aN68DU1kv0UeSjAsXKo8=
+			bCqfudS1GUrQ7gv5c3O5eZfDvswLWqi/+buoeHJt8ig=
 			</data>
 		</dict>
 		<key>IyzicoNavBar.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sqko4HM1goJma0rxX01AcVN2DZ7JGvL8Oh2Kwh250TA=
+			atbxYnobW5mcS5f37TPegqCrdJ8hWu/JVfXnSO2PaB4=
 			</data>
 		</dict>
 		<key>IyzicoPopUpView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bi7rBnubrVeQaSLVBEvNJw+fKxhWlqu55xy48DynE9I=
+			Ie7J93aJIt1/N0GhdYpOyqVh8icXsFNM2kVuB86CHGY=
 			</data>
 		</dict>
 		<key>IyzicoProductInfoView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ArYuC+Pc9vIJoVcUN81Q7lQD1XRp00FlRxH4LY5KHPU=
+			riIkiCECyDudV3rnw7ZxQiVPONOu/NX64joijDrJi14=
 			</data>
 		</dict>
 		<key>IyzicoSectionView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hp4k54iACWy+VUmxjY8cwOtiRo0qtT9iwl9sJ4JMxGI=
+			Ww7q1IMOkNAbXS6W56sFRGvum7QYE9kMmTZH+hjEyvQ=
 			</data>
 		</dict>
 		<key>IyzicoTermAndCond.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1AqHbFRqYxtzfJjPw1cdBkj3MSErogGAgifUkIpwJ9E=
+			m+i20xgY8MXMSglCAli6nj2NJUN8GQ1A967yhXYTRwU=
 			</data>
 		</dict>
 		<key>IyzicoTextArea.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sjfPtEIs2+1j7L2TQmV8st/FjR+vrmZNGDdv9ctHcng=
+			mMOuiUGR7dpU4Vo1mdz2ctwoywZj1drmyNSX4nVvpmQ=
 			</data>
 		</dict>
 		<key>IyzicoTextInput.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bLJKxefeR4tA1kNy+4IgTwIFj8ftv5o5y5FrbkwpkVw=
+			94pIBaJ1adPKS+NCH44YjJrYO4v3R1ryZcnRrsyGGMw=
 			</data>
 		</dict>
 		<key>IyzicoTransferVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i/1BIAwKIFLueJZ4XmGj2NNjS5fclAWjI0eTiPwKzag=
+			x2TsEevlpGS+LFRaQhM7zf27RUnmAFFf1k1jr5epCzY=
 			</data>
 		</dict>
 		<key>MainVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7gK2XdTeKb0g8LICAr1B/x199fJyxlv26R8uCOtBWZk=
+			1kxnpZnB4l0ueEuyQpRiMcuF2FD56Eojnkn1pe/yvKg=
 			</data>
 		</dict>
 		<key>MarkPro-Bold.otf</key>
@@ -602,49 +610,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQBEcZXcLli4K2DqpuiWS2L/VVShtQlpEcbcXpE4+lo=
+			5KAAym8QsV5zWg72Jd4JSBv5VcMLkcNca720Q4x7MYg=
+			</data>
+		</dict>
+		<key>Modules/iyzicoSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dmPuTzL3fgrzmn/Dhz1n9oH5ODBvUFEj+JqJ5BaBlnQ=
+			</data>
+		</dict>
+		<key>Modules/iyzicoSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dmPuTzL3fgrzmn/Dhz1n9oH5ODBvUFEj+JqJ5BaBlnQ=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4zZJcpEMqz0TI6OC7l3IANkfesR6XhOKw8DrKseX2a8=
+			sd3/XIw6dhRBeQdqt5Hlk0vO7F5QoQeCqvSdSURfC0w=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9wReU+NXH8Sa/N34kiO08P3DpFMd3tTgEW/m5hotz9M=
+			9TxvCF5EldCnmAXFOmNW8lsLUQI/zrx6xeLeR7QbWXU=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SsOImJ4dn6g5zvNNfiCPqH8lyRSvYcySRR4SdLuxfRk=
+			n2Bmhvx398odFtPRfs9tkJjg1Mp7Ra8vOR7XuMQJHpg=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4zZJcpEMqz0TI6OC7l3IANkfesR6XhOKw8DrKseX2a8=
+			sd3/XIw6dhRBeQdqt5Hlk0vO7F5QoQeCqvSdSURfC0w=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9wReU+NXH8Sa/N34kiO08P3DpFMd3tTgEW/m5hotz9M=
+			9TxvCF5EldCnmAXFOmNW8lsLUQI/zrx6xeLeR7QbWXU=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SsOImJ4dn6g5zvNNfiCPqH8lyRSvYcySRR4SdLuxfRk=
+			n2Bmhvx398odFtPRfs9tkJjg1Mp7Ra8vOR7XuMQJHpg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -658,84 +680,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I82+T4u1emQINK7Fs031SCAo7AEPgSXZzzCtmZIAUeM=
+			7YSKuobNvxiAyeFuH2F0ipOa06aKacjrvEkb/VjpNyg=
 			</data>
 		</dict>
 		<key>NewCardCell.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0b7g6NQyUVXHnQkA+IWQ5NPcrQUwLnuqMO0B42q+/Is=
+			n+kCkXpczdJ+ronvZ5Dmk/3iY70lCO9/2M3wgziQ94s=
 			</data>
 		</dict>
 		<key>NewCardCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6gGDzTfaH49V6n3GsIseDgiNAPlKg6I0QlmqTet050=
+			wkKrc0vUSoWlJP7zkIU9FqKGZvmkcNfCgqhKHAF3TzU=
 			</data>
 		</dict>
 		<key>NewMemberVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96Ug2NdvjJATE+E1yPQoJ54VrFMWT3t/RXWjFLKlo00=
+			KxbUUWqOjn6QI6BoYwrnd/po9pXiV2RE9zxBQjZvVRA=
 			</data>
 		</dict>
 		<key>NotaMemberVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			abHPCY+ubWCjVBnMIjitbHeomeGRj5Tsg1AbHUIm4pU=
+			6H9ZkvswF9BhHaizczvCH/rNPU3LzXH2RbQcHZe3JU8=
 			</data>
 		</dict>
 		<key>OTPVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gq/5P/0LxFW+piLe51uXvrkKNMxWGOnwVjO0JhuNIPg=
+			Q1j1CkJpV0P5lfLbYpMjYL/+TUu+eSYMoIZ7a0h+vs4=
 			</data>
 		</dict>
 		<key>PhoneVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AwvLsuIua4QLKbdMSdjSeIlzo8v9nHD3V4pbVvqU/ZE=
+			hpHaYTFgSzX4FGzkn8lv8iJZIKAFNEi5P3Us/QXrq5w=
 			</data>
 		</dict>
 		<key>ResultCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fYBickcXIoD+pankrcF+B7PTsZg0nhJLpI0s8C9t9xg=
+			Cc6au9XcFwn0kr/S9/aZksjgWKGddSRWu2EiwTwlSKo=
 			</data>
 		</dict>
 		<key>ResultVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNhY9QEQ6DgodWsP0fHd8hTWCtRbDCyuPZuNKE0Lljc=
+			m+r071Jdud0n+Bu+ssAiRxS4z0778mWqSgqbVz4fdJw=
 			</data>
 		</dict>
 		<key>SettlementVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFJ1IzKN68aJjXpEL0QdkQa0PHs798B4LnkznOeOfjo=
+			ql+GqWUHb1DdmuvnXgCrCosKeOZGcKB4aZUWYH9np2U=
 			</data>
 		</dict>
 		<key>TitleCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s0xVLSrV6Cwt0JcEWjKBHHGB/7+9q5ya/YGmFFj4VFI=
+			M2uY1+vfab8hGP9R+ZHj4hkrF/YHZ97Nex894iyX4ZQ=
 			</data>
 		</dict>
 		<key>WebVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GV8B/iAniR629fC+tqL7isbg9Yo4fhPGPq4Z+UXFbh4=
+			HiLdNWhVoc8QtyaB6J09D1WTDoLCDHMFgHR3IjSIfIk=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

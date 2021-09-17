@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name iyzicoSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name iyzicoSDK
 import Alamofire
 import CommonCrypto
 import CommonCrypto.CommonHMAC
@@ -22,7 +22,7 @@ extension UIFont {
   public static func registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle = Bundle(identifier: StringConstant.shared.frameworkBundle)!)
 }
 @_hasMissingDesignatedInitializers open class StringConstant {
-  public static let shared: iyzicoSDK.StringConstant
+  public static var shared: iyzicoSDK.StringConstant
   final public let frameworkBundle: Swift.String
   final public let externalBorderName: Swift.String
   final public let introTitle: Swift.String
@@ -152,7 +152,7 @@ public enum BasketItemType : Swift.String, Swift.CaseIterable {
   }
 }
 @_hasMissingDesignatedInitializers public class Iyzico {
-  public static let shared: iyzicoSDK.Iyzico
+  public static var shared: iyzicoSDK.Iyzico
   weak public static var delegate: iyzicoSDK.IyzicoDelegate?
   @objc deinit
 }
@@ -247,7 +247,34 @@ extension UIColor {
   }
 }
 public enum Model : Swift.String {
-  case simulator, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, unrecognized
+  case simulator
+  case iPhone4
+  case iPhone4S
+  case iPhone5
+  case iPhone5S
+  case iPhone5C
+  case iPhone6
+  case iPhone6Plus
+  case iPhone6S
+  case iPhone6SPlus
+  case iPhoneSE
+  case iPhone7
+  case iPhone7Plus
+  case iPhone8
+  case iPhone8Plus
+  case iPhoneX
+  case iPhoneXS
+  case iPhoneXSMax
+  case iPhoneXR
+  case iPhone11
+  case iPhone11Pro
+  case iPhone11ProMax
+  case iPhoneSE2
+  case iPhone12Mini
+  case iPhone12
+  case iPhone12Pro
+  case iPhone12ProMax
+  case unrecognized
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
@@ -267,21 +294,3 @@ extension String {
     get
   }
 }
-extension iyzicoSDK.ResultCode : Swift.Equatable {}
-extension iyzicoSDK.ResultCode : Swift.Hashable {}
-extension iyzicoSDK.ResultCode : Swift.RawRepresentable {}
-extension iyzicoSDK.Language : Swift.Equatable {}
-extension iyzicoSDK.Language : Swift.Hashable {}
-extension iyzicoSDK.Language : Swift.RawRepresentable {}
-extension iyzicoSDK.Currency : Swift.Equatable {}
-extension iyzicoSDK.Currency : Swift.Hashable {}
-extension iyzicoSDK.Currency : Swift.RawRepresentable {}
-extension iyzicoSDK.PaymentGroup : Swift.Equatable {}
-extension iyzicoSDK.PaymentGroup : Swift.Hashable {}
-extension iyzicoSDK.PaymentGroup : Swift.RawRepresentable {}
-extension iyzicoSDK.BasketItemType : Swift.Equatable {}
-extension iyzicoSDK.BasketItemType : Swift.Hashable {}
-extension iyzicoSDK.BasketItemType : Swift.RawRepresentable {}
-extension iyzicoSDK.Model : Swift.Equatable {}
-extension iyzicoSDK.Model : Swift.Hashable {}
-extension iyzicoSDK.Model : Swift.RawRepresentable {}
