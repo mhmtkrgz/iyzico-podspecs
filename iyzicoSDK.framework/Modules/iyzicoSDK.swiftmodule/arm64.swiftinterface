@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name iyzicoSDK
 import Alamofire
 import CommonCrypto
@@ -12,13 +12,14 @@ import SVGKit
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @_exported import iyzicoSDK
-extension UIFont {
+extension UIKit.UIFont {
   public class var markProMedium13: UIKit.UIFont {
     get
   }
 }
-extension UIFont {
+extension UIKit.UIFont {
   public static func registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle = Bundle(identifier: StringConstant.shared.frameworkBundle)!)
 }
 @_hasMissingDesignatedInitializers open class StringConstant {
@@ -31,7 +32,7 @@ extension UIFont {
   final public let phoneVCTermHighletedString: Swift.String
   @objc deinit
 }
-extension StringConstant {
+extension iyzicoSDK.StringConstant {
   open func registerFonts()
 }
 public enum ResultCode : Swift.Int, Swift.CaseIterable {
@@ -81,26 +82,26 @@ public enum ResultCode : Swift.Int, Swift.CaseIterable {
   case shippingCityError
   case billingCountryError
   case success
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
+  public typealias AllCases = [iyzicoSDK.ResultCode]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.ResultCode] {
     get
   }
-  public typealias AllCases = [iyzicoSDK.ResultCode]
-  public static var allCases: [iyzicoSDK.ResultCode] {
+  public var rawValue: Swift.Int {
     get
   }
 }
 public enum Language : Swift.String, Swift.CaseIterable {
   case TURKISH
   case ENGLISH
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [iyzicoSDK.Language]
+  public typealias RawValue = Swift.String
+  public static var allCases: [iyzicoSDK.Language] {
     get
   }
-  public typealias AllCases = [iyzicoSDK.Language]
-  public static var allCases: [iyzicoSDK.Language] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -110,13 +111,13 @@ public enum Currency : Swift.String, Swift.CaseIterable {
   case EUR
   case GBP
   case IRR
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [iyzicoSDK.Currency]
+  public typealias RawValue = Swift.String
+  public static var allCases: [iyzicoSDK.Currency] {
     get
   }
-  public typealias AllCases = [iyzicoSDK.Currency]
-  public static var allCases: [iyzicoSDK.Currency] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -125,26 +126,26 @@ public enum PaymentGroup : Swift.String, Swift.CaseIterable {
   case LISTING
   case SUBSCRIPTION
   case none
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [iyzicoSDK.PaymentGroup]
+  public typealias RawValue = Swift.String
+  public static var allCases: [iyzicoSDK.PaymentGroup] {
     get
   }
-  public typealias AllCases = [iyzicoSDK.PaymentGroup]
-  public static var allCases: [iyzicoSDK.PaymentGroup] {
+  public var rawValue: Swift.String {
     get
   }
 }
 public enum BasketItemType : Swift.String, Swift.CaseIterable {
   case PHYSICAL
   case VIRTUAL
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
+  public typealias AllCases = [iyzicoSDK.BasketItemType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [iyzicoSDK.BasketItemType] {
     get
   }
-  public typealias AllCases = [iyzicoSDK.BasketItemType]
-  public static var allCases: [iyzicoSDK.BasketItemType] {
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -153,12 +154,12 @@ public enum BasketItemType : Swift.String, Swift.CaseIterable {
   weak public static var delegate: iyzicoSDK.IyzicoDelegate?
   @objc deinit
 }
-extension Iyzico {
+extension iyzicoSDK.Iyzico {
   public func startPayWithIyzico(brand: Swift.String, price: Swift.Double, paidPrice: Swift.Double, currency: iyzicoSDK.Currency = Currency.TRY, enabledInstallments: [Swift.Int], basketId: Swift.String, paymentGroup: iyzicoSDK.PaymentGroup? = .PRODUCT, paymentSource: Swift.String, urlCallback: Swift.String, buyerId: Swift.String, buyerName: Swift.String, buyerSurname: Swift.String, buyerIdentityNumber: Swift.String, buyerCity: Swift.String, buyerCountry: Swift.String, buyerEmail: Swift.String, buyerPhone: Swift.String, buyerIp: Swift.String, buyerRegistrationAddress: Swift.String, buyerRegistrationDate: Swift.String, buyerLastLoginDate: Swift.String, billingContactName: Swift.String, billingCity: Swift.String, billingCountry: Swift.String, billingAddress: Swift.String, shippingContactName: Swift.String, shippingCity: Swift.String, shippingCountry: Swift.String, shippingAddress: Swift.String, basketItemList: [iyzicoSDK.IyzicoBasketItem])
   public func startTopUp(buyerEmail: Swift.String, buyerPhone: Swift.String, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
   public func startCashOut(buyerEmail: Swift.String, buyerPhone: Swift.String, walletPrice: Swift.Double, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
 }
-extension Iyzico {
+extension iyzicoSDK.Iyzico {
   open func initialize(clientIp: Swift.String, clientId: Swift.String, clientSecret: Swift.String, baseUrl: Swift.String, merchantApiKey: Swift.String? = nil, merchantSecretKey: Swift.String? = nil, language: iyzicoSDK.Language)
 }
 public struct Buyer {
@@ -167,8 +168,8 @@ public struct Buyer {
   public let country: Swift.String?, ip: Swift.String?
   public init(id: Swift.String?, name: Swift.String?, surname: Swift.String?, identityNumber: Swift.String?, email: Swift.String?, gsmNumber: Swift.String?, registrationAddress: Swift.String?, city: Swift.String?, country: Swift.String?, ip: Swift.String?)
 }
-extension UIResponder {
-  public var parentViewController: UIKit.UIViewController? {
+extension UIKit.UIResponder {
+  @_Concurrency.MainActor(unsafe) public var parentViewController: UIKit.UIViewController? {
     get
   }
 }
@@ -176,13 +177,13 @@ public struct PWIAddress {
   public let address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?
   public init(address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?)
 }
-@nonobjc extension UIViewController {
-  public func add(_ child: UIKit.UIViewController, containerView: UIKit.UIView? = nil)
-  public func remove()
+@nonobjc extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController, containerView: UIKit.UIView? = nil)
+  @_Concurrency.MainActor(unsafe) public func remove()
 }
-extension UILabel {
-  public func startTimer(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil)
-  public func startTimerWithReturn(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil) -> Foundation.Timer
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func startTimer(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func startTimerWithReturn(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil) -> Foundation.Timer
 }
 public struct IyzicoBasketItem {
   public let id: Swift.String?, price: Swift.String?, name: Swift.String?, category1: Swift.String?
@@ -193,7 +194,7 @@ public protocol IyzicoDelegate : AnyObject {
   func didOperationSuccess(message: Swift.String)
   func didOperationFailed(state: iyzicoSDK.ResultCode, message: Swift.String)
 }
-extension UIColor {
+extension UIKit.UIColor {
   @nonobjc public class var clearBlue: UIKit.UIColor {
     get
   }
@@ -260,21 +261,21 @@ public enum Model : Swift.String {
   case iPhone12Pro
   case iPhone12ProMax
   case unrecognized
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-extension UIDevice {
-  public var type: iyzicoSDK.Model {
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: iyzicoSDK.Model {
     get
   }
 }
-extension UILabel {
-  public func securePhoneText(number: Swift.String)
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func securePhoneText(number: Swift.String)
 }
-extension String {
+extension Swift.String {
   public var isBackspace: Swift.Bool {
     get
   }
