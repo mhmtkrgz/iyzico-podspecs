@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
 		   iyzico'nun güvenli ve kolay ödeme yöntemi olan Pay with iyzico ürününü, 		   müşterilerin bakiyelerine yükleme yapmak için kullanabilecekleri Top-up 		   ürününü ve hediye puanlarını bakiyelerine alabilecekleri Cash-out 			   ürününü içermektedir
                    DESC
 
-  s.homepage     = "https://github.com/iyzico/iyzico-sdk-ios-sample"
+  s.homepage     = "https://github.com/iyzico/iyzico-podspecs"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "iyzico" => "integration@iyzico.com" } 
   s.ios.deployment_target = '12.0'
  
-  s.source        = { :git => 'https://github.com/iyzico/iyzico-sdk-ios-sample.git' }
+  s.source        = { :git => 'https://github.com/iyzico/iyzico-podspecs.git' }
   #s.source_files    = 'tFM/*.{swift, h, xib}'
   s.public_header_files = "iyzicoSDK.framework/Headers/*.h"
   s.source_files = "iyzicoSDK.framework/Headers/*.h"
