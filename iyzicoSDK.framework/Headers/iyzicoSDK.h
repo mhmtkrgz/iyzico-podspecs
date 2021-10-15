@@ -2,7 +2,7 @@
 //  iyzicoSDK.h
 //  iyzicoSDK
 //
-//  Created by Tolga İskender on 13.10.2021.
+//  Created by Huseyin Akcay on 14.10.2021.
 //
 
 #import <Foundation/Foundation.h>
