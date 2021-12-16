@@ -9,6 +9,6 @@ target 'iyzicoSDK' do
     pod 'Alamofire', '5.4.4'
     pod 'IQKeyboardManagerSwift', '6.5.6'
     pod 'lottie-ios', '3.2.1'
-    pod 'SVGKit', '3.0.0'
+    pod 'SVGKit', '2.1.0'
 
 end

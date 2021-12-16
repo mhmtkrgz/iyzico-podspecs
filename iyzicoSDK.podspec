@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'IQKeyboardManagerSwift', '6.5.6'
   s.dependency 'lottie-ios', '3.2.1'
-  s.dependency 'SVGKit', '3.0.0'
+  s.dependency 'SVGKit', '2.1.0'
   s.dependency 'Alamofire', '5.4.4'
 
   s.pod_target_xcconfig = {
