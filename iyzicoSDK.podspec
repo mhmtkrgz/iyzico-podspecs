@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
  
   s.source        = { :git => 'https://github.com/iyzico/iyzico-podspecs.git', :tag => s.version }
   #s.source_files    = 'tFM/*.{swift, h, xib}'
-  s.public_header_files = "iyzicoSDK.framework/Headers/*.h"
-  s.source_files = "iyzicoSDK.framework/Headers/*.h"
-  s.ios.vendored_frameworks = 'iyzicoSDK.framework'
+  #s.public_header_files = "iyzicoSDK.framework/Headers/*.h"
+  #s.source_files = "iyzicoSDK.framework/Headers/*.h"
+  s.ios.vendored_frameworks = 'iyzicoSDK.xcframework'
   s.swift_version = '5.0'
 
 
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.dependency 'SVGKit', '3.0.0'
   s.dependency 'Alamofire', '5.4.4'
 
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
