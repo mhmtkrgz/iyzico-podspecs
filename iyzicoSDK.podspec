@@ -12,9 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { "iyzico" => "integration@iyzico.com" } 
   s.ios.deployment_target = '11.0'
   s.ios.vendored_frameworks = 'iyzicoSDK.xcframework'
-  s.source        = { :git => 'https://github.com/huseyinakcay/iyzicoXCframework.git',
-			 :tag => s.version.to_s
-		 	}
+  s.source        = { :git => 'https://github.com/iyzico/iyzico-podspecs.git', :tag => s.version }
   s.swift_version = '5.0'
   s.exclude_files = "Classes/Exclude"
 
