@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		JKoZVacleLkr49qzFwVHMUhzt58=
+		8PG/a5PfBOT0Iar7xGLegeYbvD8=
 		</data>
 		<key>BankCell.nib</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>Headers/iyzicoSDK-Swift.h</key>
 		<data>
-		aytrjjZLBnuet3IoYfj/2+Kjk7A=
+		8p3E+ULAXVtmg8TjAlg+9OO2ab0=
 		</data>
 		<key>Headers/iyzicoSDK.h</key>
 		<data>
-		2NVyBhRu4s/kLY/IoqZY3Eg7I7o=
+		01piHVu0KwGrOkcH+sM4n/N/zAo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IHZIO/BZf0Oqp8tB7toX8odbzks=
+		vAAEu8nM8tWaggmMnkQucV67N/s=
 		</data>
 		<key>InfoCell.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UN55qG9n1iTmJK++TfbryINT6S0=
+		r6SeTsN4MnYaow87VR+3YkMJoKY=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		vHjVl1srL7LEZXaZ1DBAqohTwa0=
+		gLeaOWj0lA5CQQegLh/9Lgd76m0=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		UN55qG9n1iTmJK++TfbryINT6S0=
+		r6SeTsN4MnYaow87VR+3YkMJoKY=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		vHjVl1srL7LEZXaZ1DBAqohTwa0=
+		gLeaOWj0lA5CQQegLh/9Lgd76m0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -308,7 +308,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K38eMQPuAspVwlHL029ly8qW/4OvGg0MSoQBvdgoqEo=
+			pewIbWpS9f83jdiK5KJyrnnLtNlv3+/HoeMkJ5I21Ik=
 			</data>
 		</dict>
 		<key>BankCell.nib</key>
@@ -357,14 +357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9UYBkyb6Z4WqbNcfub5+1V9aucp6t4RoTxqyONCqwLk=
+			QIy6KWHr/D63SPZhfcoj8hE7Z0eV0NBel3dg5PDU4pc=
 			</data>
 		</dict>
 		<key>Headers/iyzicoSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wRzYdaYvAxW+M5xwJyGfmKM5Ta1rEBNoCaibqnN/dgM=
+			prrMX4vMzUKUkFzeTxV/hJ4/Qn+rdQJfhgp6XMagbwQ=
 			</data>
 		</dict>
 		<key>InfoCell.nib</key>
@@ -616,14 +616,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LL2uU/1ILuo5vWvACbNrjqGBF665Ry/qXRmYkS/jiqA=
+			2Muxy31KrZ4eYuFeZDtPLz99FszAxwm8ME3kwZ96QrA=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CW6zVm5BAYuTCXgwuaqUvtgGWFmwP9Gly8Lk2phwq6A=
+			lcyQmP1e1b0Iih3obn03sAaGHBCyvOXSbOnM+nP3Nqc=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -637,14 +637,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LL2uU/1ILuo5vWvACbNrjqGBF665Ry/qXRmYkS/jiqA=
+			2Muxy31KrZ4eYuFeZDtPLz99FszAxwm8ME3kwZ96QrA=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CW6zVm5BAYuTCXgwuaqUvtgGWFmwP9Gly8Lk2phwq6A=
+			lcyQmP1e1b0Iih3obn03sAaGHBCyvOXSbOnM+nP3Nqc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

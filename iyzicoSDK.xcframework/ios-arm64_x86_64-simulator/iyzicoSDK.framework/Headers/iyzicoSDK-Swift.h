@@ -190,6 +190,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -207,6 +209,127 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+typedef SWIFT_ENUM(NSInteger, BasketItemType, open) {
+  BasketItemTypePHYSICAL = 0,
+  BasketItemTypeVIRTUAL = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, Currency, open) {
+  CurrencyTRY = 0,
+  CurrencyUSD = 1,
+  CurrencyEUR = 2,
+  CurrencyGBP = 3,
+  CurrencyIRR = 4,
+};
+
+@protocol IyzicoDelegate;
+
+SWIFT_CLASS("_TtC9iyzicoSDK6Iyzico")
+@interface Iyzico : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Iyzico * _Nonnull shared;)
++ (Iyzico * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <IyzicoDelegate> _Nullable delegate;)
++ (id <IyzicoDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDelegate:(id <IyzicoDelegate> _Nullable)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+@class NSNumber;
+enum PaymentGroup : NSInteger;
+@class IyzicoBasketItem;
+
+@interface Iyzico (SWIFT_EXTENSION(iyzicoSDK))
+- (void)startPayWithIyzicoWithBrand:(NSString * _Nonnull)brand price:(double)price paidPrice:(double)paidPrice currency:(enum Currency)currency enabledInstallments:(NSArray<NSNumber *> * _Nonnull)enabledInstallments basketId:(NSString * _Nonnull)basketId paymentGroup:(enum PaymentGroup)paymentGroup paymentSource:(NSString * _Nonnull)paymentSource urlCallback:(NSString * _Nonnull)urlCallback buyerId:(NSString * _Nonnull)buyerId buyerName:(NSString * _Nonnull)buyerName buyerSurname:(NSString * _Nonnull)buyerSurname buyerIdentityNumber:(NSString * _Nonnull)buyerIdentityNumber buyerCity:(NSString * _Nonnull)buyerCity buyerCountry:(NSString * _Nonnull)buyerCountry buyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone buyerIp:(NSString * _Nonnull)buyerIp buyerRegistrationAddress:(NSString * _Nonnull)buyerRegistrationAddress buyerRegistrationDate:(NSString * _Nonnull)buyerRegistrationDate buyerLastLoginDate:(NSString * _Nonnull)buyerLastLoginDate billingContactName:(NSString * _Nonnull)billingContactName billingCity:(NSString * _Nonnull)billingCity billingCountry:(NSString * _Nonnull)billingCountry billingAddress:(NSString * _Nonnull)billingAddress shippingContactName:(NSString * _Nonnull)shippingContactName shippingCity:(NSString * _Nonnull)shippingCity shippingCountry:(NSString * _Nonnull)shippingCountry shippingAddress:(NSString * _Nonnull)shippingAddress basketItemList:(NSArray<IyzicoBasketItem *> * _Nonnull)basketItemList;
+- (void)startTopUpWithBuyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone buyerName:(NSString * _Nullable)buyerName buyerSurname:(NSString * _Nullable)buyerSurname;
+- (void)startCashOutWithBuyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone walletPrice:(double)walletPrice buyerName:(NSString * _Nullable)buyerName buyerSurname:(NSString * _Nullable)buyerSurname;
+@end
+
+
+enum Language : NSInteger;
+
+@interface Iyzico (SWIFT_EXTENSION(iyzicoSDK))
+- (void)initializeWithClientIp:(NSString * _Nonnull)clientIp clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret baseUrl:(NSString * _Nonnull)baseUrl merchantApiKey:(NSString * _Nullable)merchantApiKey merchantSecretKey:(NSString * _Nullable)merchantSecretKey language:(enum Language)language;
+- (void)showErrorWithErrorDescription:(NSString * _Nullable)errorDescription;
+@end
+
+
+SWIFT_CLASS("_TtC9iyzicoSDK16IyzicoBasketItem")
+@interface IyzicoBasketItem : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+enum ResultCode : NSInteger;
+
+SWIFT_PROTOCOL("_TtP9iyzicoSDK14IyzicoDelegate_")
+@protocol IyzicoDelegate
+- (void)didOperationSuccessWithMessage:(NSString * _Nonnull)message;
+- (void)didOperationFailedWithState:(enum ResultCode)state message:(NSString * _Nonnull)message;
+@end
+
+typedef SWIFT_ENUM(NSInteger, Language, open) {
+  LanguageTURKISH = 0,
+  LanguageENGLISH = 1,
+};
+
+
+typedef SWIFT_ENUM(NSInteger, PaymentGroup, open) {
+  PaymentGroupPRODUCT = 0,
+  PaymentGroupLISTING = 1,
+  PaymentGroupSUBSCRIPTION = 2,
+  PaymentGroupNone = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, ResultCode, open) {
+  ResultCodeLanguageError = 1,
+  ResultCodeError = 2,
+  ResultCodeTimeOut = 3,
+  ResultCodePhoneError = 4,
+  ResultCodeEmailError = 5,
+  ResultCodeBrandError = 6,
+  ResultCodePriceError = 7,
+  ResultCodeProductIDError = 8,
+  ResultCodeWalletPriceError = 9,
+  ResultCodeClientIpError = 10,
+  ResultCodeClientIdError = 11,
+  ResultCodeClientSecretKeyError = 12,
+  ResultCodeBaseUrlError = 13,
+  ResultCodeMerchantApiKeyError = 14,
+  ResultCodeMerchantSecretKeyError = 15,
+  ResultCodePaidPriceError = 16,
+  ResultCodeUrlCallbackError = 17,
+  ResultCodeEnabledinstallmentError = 18,
+  ResultCodeBasketIDError = 19,
+  ResultCodeBuyerIDError = 20,
+  ResultCodeBuyerNameError = 21,
+  ResultCodeBuyerSurnameError = 22,
+  ResultCodeBuyerIdentityNumberError = 23,
+  ResultCodeBuyerCityError = 24,
+  ResultCodeBuyerCountryError = 25,
+  ResultCodeBuyerEmailError = 26,
+  ResultCodeBuyerPhoneError = 27,
+  ResultCodeBuyerIPError = 28,
+  ResultCodeBuyerRegistrationAddressError = 29,
+  ResultCodeClosedTransactionError = 30,
+  ResultCodeBasketProductPriceError = 31,
+  ResultCodeBasketProductItemTypeError = 32,
+  ResultCodeBillingContactNameError = 33,
+  ResultCodeBillingCityError = 34,
+  ResultCodeShippingCountryError = 35,
+  ResultCodeShippingAddressError = 36,
+  ResultCodeEmptyBasketError = 37,
+  ResultCodeFullBasketError = 38,
+  ResultCodeBasketProductIdError = 39,
+  ResultCodeBasketProductNameError = 40,
+  ResultCodeBasketProductCategoryError = 41,
+  ResultCodeBillingAdressError = 42,
+  ResultCodeShippingContactNameError = 43,
+  ResultCodeShippingCityError = 44,
+  ResultCodeBillingCountryError = 45,
+  ResultCodeSuccess = 99,
+};
 
 
 
@@ -425,6 +548,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -442,6 +567,127 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+typedef SWIFT_ENUM(NSInteger, BasketItemType, open) {
+  BasketItemTypePHYSICAL = 0,
+  BasketItemTypeVIRTUAL = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, Currency, open) {
+  CurrencyTRY = 0,
+  CurrencyUSD = 1,
+  CurrencyEUR = 2,
+  CurrencyGBP = 3,
+  CurrencyIRR = 4,
+};
+
+@protocol IyzicoDelegate;
+
+SWIFT_CLASS("_TtC9iyzicoSDK6Iyzico")
+@interface Iyzico : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Iyzico * _Nonnull shared;)
++ (Iyzico * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <IyzicoDelegate> _Nullable delegate;)
++ (id <IyzicoDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDelegate:(id <IyzicoDelegate> _Nullable)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+@class NSNumber;
+enum PaymentGroup : NSInteger;
+@class IyzicoBasketItem;
+
+@interface Iyzico (SWIFT_EXTENSION(iyzicoSDK))
+- (void)startPayWithIyzicoWithBrand:(NSString * _Nonnull)brand price:(double)price paidPrice:(double)paidPrice currency:(enum Currency)currency enabledInstallments:(NSArray<NSNumber *> * _Nonnull)enabledInstallments basketId:(NSString * _Nonnull)basketId paymentGroup:(enum PaymentGroup)paymentGroup paymentSource:(NSString * _Nonnull)paymentSource urlCallback:(NSString * _Nonnull)urlCallback buyerId:(NSString * _Nonnull)buyerId buyerName:(NSString * _Nonnull)buyerName buyerSurname:(NSString * _Nonnull)buyerSurname buyerIdentityNumber:(NSString * _Nonnull)buyerIdentityNumber buyerCity:(NSString * _Nonnull)buyerCity buyerCountry:(NSString * _Nonnull)buyerCountry buyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone buyerIp:(NSString * _Nonnull)buyerIp buyerRegistrationAddress:(NSString * _Nonnull)buyerRegistrationAddress buyerRegistrationDate:(NSString * _Nonnull)buyerRegistrationDate buyerLastLoginDate:(NSString * _Nonnull)buyerLastLoginDate billingContactName:(NSString * _Nonnull)billingContactName billingCity:(NSString * _Nonnull)billingCity billingCountry:(NSString * _Nonnull)billingCountry billingAddress:(NSString * _Nonnull)billingAddress shippingContactName:(NSString * _Nonnull)shippingContactName shippingCity:(NSString * _Nonnull)shippingCity shippingCountry:(NSString * _Nonnull)shippingCountry shippingAddress:(NSString * _Nonnull)shippingAddress basketItemList:(NSArray<IyzicoBasketItem *> * _Nonnull)basketItemList;
+- (void)startTopUpWithBuyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone buyerName:(NSString * _Nullable)buyerName buyerSurname:(NSString * _Nullable)buyerSurname;
+- (void)startCashOutWithBuyerEmail:(NSString * _Nonnull)buyerEmail buyerPhone:(NSString * _Nonnull)buyerPhone walletPrice:(double)walletPrice buyerName:(NSString * _Nullable)buyerName buyerSurname:(NSString * _Nullable)buyerSurname;
+@end
+
+
+enum Language : NSInteger;
+
+@interface Iyzico (SWIFT_EXTENSION(iyzicoSDK))
+- (void)initializeWithClientIp:(NSString * _Nonnull)clientIp clientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret baseUrl:(NSString * _Nonnull)baseUrl merchantApiKey:(NSString * _Nullable)merchantApiKey merchantSecretKey:(NSString * _Nullable)merchantSecretKey language:(enum Language)language;
+- (void)showErrorWithErrorDescription:(NSString * _Nullable)errorDescription;
+@end
+
+
+SWIFT_CLASS("_TtC9iyzicoSDK16IyzicoBasketItem")
+@interface IyzicoBasketItem : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+enum ResultCode : NSInteger;
+
+SWIFT_PROTOCOL("_TtP9iyzicoSDK14IyzicoDelegate_")
+@protocol IyzicoDelegate
+- (void)didOperationSuccessWithMessage:(NSString * _Nonnull)message;
+- (void)didOperationFailedWithState:(enum ResultCode)state message:(NSString * _Nonnull)message;
+@end
+
+typedef SWIFT_ENUM(NSInteger, Language, open) {
+  LanguageTURKISH = 0,
+  LanguageENGLISH = 1,
+};
+
+
+typedef SWIFT_ENUM(NSInteger, PaymentGroup, open) {
+  PaymentGroupPRODUCT = 0,
+  PaymentGroupLISTING = 1,
+  PaymentGroupSUBSCRIPTION = 2,
+  PaymentGroupNone = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, ResultCode, open) {
+  ResultCodeLanguageError = 1,
+  ResultCodeError = 2,
+  ResultCodeTimeOut = 3,
+  ResultCodePhoneError = 4,
+  ResultCodeEmailError = 5,
+  ResultCodeBrandError = 6,
+  ResultCodePriceError = 7,
+  ResultCodeProductIDError = 8,
+  ResultCodeWalletPriceError = 9,
+  ResultCodeClientIpError = 10,
+  ResultCodeClientIdError = 11,
+  ResultCodeClientSecretKeyError = 12,
+  ResultCodeBaseUrlError = 13,
+  ResultCodeMerchantApiKeyError = 14,
+  ResultCodeMerchantSecretKeyError = 15,
+  ResultCodePaidPriceError = 16,
+  ResultCodeUrlCallbackError = 17,
+  ResultCodeEnabledinstallmentError = 18,
+  ResultCodeBasketIDError = 19,
+  ResultCodeBuyerIDError = 20,
+  ResultCodeBuyerNameError = 21,
+  ResultCodeBuyerSurnameError = 22,
+  ResultCodeBuyerIdentityNumberError = 23,
+  ResultCodeBuyerCityError = 24,
+  ResultCodeBuyerCountryError = 25,
+  ResultCodeBuyerEmailError = 26,
+  ResultCodeBuyerPhoneError = 27,
+  ResultCodeBuyerIPError = 28,
+  ResultCodeBuyerRegistrationAddressError = 29,
+  ResultCodeClosedTransactionError = 30,
+  ResultCodeBasketProductPriceError = 31,
+  ResultCodeBasketProductItemTypeError = 32,
+  ResultCodeBillingContactNameError = 33,
+  ResultCodeBillingCityError = 34,
+  ResultCodeShippingCountryError = 35,
+  ResultCodeShippingAddressError = 36,
+  ResultCodeEmptyBasketError = 37,
+  ResultCodeFullBasketError = 38,
+  ResultCodeBasketProductIdError = 39,
+  ResultCodeBasketProductNameError = 40,
+  ResultCodeBasketProductCategoryError = 41,
+  ResultCodeBillingAdressError = 42,
+  ResultCodeShippingContactNameError = 43,
+  ResultCodeShippingCityError = 44,
+  ResultCodeBillingCountryError = 45,
+  ResultCodeSuccess = 99,
+};
 
 
 

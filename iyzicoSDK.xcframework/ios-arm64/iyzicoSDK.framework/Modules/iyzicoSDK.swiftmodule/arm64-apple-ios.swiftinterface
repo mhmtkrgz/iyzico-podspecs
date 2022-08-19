@@ -14,23 +14,187 @@ import UIKit
 import WebKit
 import _Concurrency
 @_exported import iyzicoSDK
-public struct IyzicoBasketItem {
-  public let id: Swift.String?, price: Swift.String?, name: Swift.String?, category1: Swift.String?
-  public let itemType: Swift.String?, subMerchantKey: Swift.String?, subMerchantPrice: Swift.String?
-  public init(itemCategory: Swift.String, productId: Swift.String?, itemType: Swift.String, itemName: Swift.String, price: Swift.String?, subMerchantKey: Swift.String?, subMerchantPrice: Swift.String?)
+extension UIKit.UIFont {
+  public class var markProMedium13: UIKit.UIFont {
+    get
+  }
 }
-public protocol IyzicoDelegate : AnyObject {
-  func didOperationSuccess(message: Swift.String)
-  func didOperationFailed(state: iyzicoSDK.ResultCode, message: Swift.String)
+extension UIKit.UIFont {
+  public static func registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle = Bundle(identifier: StringConstant.shared.frameworkBundle)!)
 }
-@nonobjc extension UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController, containerView: UIKit.UIView? = nil)
-  @_Concurrency.MainActor(unsafe) public func remove()
+@_hasMissingDesignatedInitializers open class StringConstant {
+  public static let shared: iyzicoSDK.StringConstant
+  final public let frameworkBundle: Swift.String
+  final public let externalBorderName: Swift.String
+  final public let introTitle: Swift.String
+  final public let introBody: Swift.String
+  final public let phoneVCTermString: Swift.String
+  final public let phoneVCTermHighletedString: Swift.String
+  @objc deinit
+}
+extension iyzicoSDK.StringConstant {
+  open func registerFonts()
+}
+@objc public enum ResultCode : Swift.Int, Swift.CaseIterable {
+  case languageError = 1
+  case error = 2
+  case timeOut = 3
+  case phoneError = 4
+  case emailError = 5
+  case brandError = 6
+  case priceError = 7
+  case productIDError = 8
+  case walletPriceError = 9
+  case clientIpError = 10
+  case clientIdError = 11
+  case clientSecretKeyError = 12
+  case baseUrlError = 13
+  case merchantApiKeyError = 14
+  case merchantSecretKeyError = 15
+  case paidPriceError = 16
+  case urlCallbackError = 17
+  case enabledinstallmentError = 18
+  case basketIDError = 19
+  case buyerIDError = 20
+  case buyerNameError = 21
+  case buyerSurnameError = 22
+  case buyerIdentityNumberError = 23
+  case buyerCityError = 24
+  case buyerCountryError = 25
+  case buyerEmailError = 26
+  case buyerPhoneError = 27
+  case buyerIPError = 28
+  case buyerRegistrationAddressError = 29
+  case closedTransactionError = 30
+  case basketProductPriceError = 31
+  case basketProductItemTypeError = 32
+  case billingContactNameError = 33
+  case billingCityError = 34
+  case shippingCountryError = 35
+  case shippingAddressError = 36
+  case emptyBasketError = 37
+  case fullBasketError = 38
+  case basketProductIdError = 39
+  case basketProductNameError = 40
+  case basketProductCategoryError = 41
+  case billingAdressError = 42
+  case shippingContactNameError = 43
+  case shippingCityError = 44
+  case billingCountryError = 45
+  case success = 99
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [iyzicoSDK.ResultCode]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.ResultCode] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum Language : Swift.Int, Swift.CaseIterable {
+  case TURKISH = 0
+  case ENGLISH
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [iyzicoSDK.Language]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.Language] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum Currency : Swift.Int, Swift.CaseIterable {
+  case TRY = 0
+  case USD
+  case EUR
+  case GBP
+  case IRR
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [iyzicoSDK.Currency]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.Currency] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PaymentGroup : Swift.Int, Swift.CaseIterable {
+  case PRODUCT = 0
+  case LISTING
+  case SUBSCRIPTION
+  case none
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [iyzicoSDK.PaymentGroup]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.PaymentGroup] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum BasketItemType : Swift.Int, Swift.CaseIterable {
+  case PHYSICAL
+  case VIRTUAL
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [iyzicoSDK.BasketItemType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [iyzicoSDK.BasketItemType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc public class Iyzico : ObjectiveC.NSObject {
+  @objc public static let shared: iyzicoSDK.Iyzico
+  @objc weak public static var delegate: iyzicoSDK.IyzicoDelegate?
+  @objc deinit
+}
+@objc extension iyzicoSDK.Iyzico {
+  @objc dynamic public func startPayWithIyzico(brand: Swift.String, price: Swift.Double, paidPrice: Swift.Double, currency: iyzicoSDK.Currency = Currency.TRY, enabledInstallments: [Swift.Int], basketId: Swift.String, paymentGroup: iyzicoSDK.PaymentGroup = .PRODUCT, paymentSource: Swift.String, urlCallback: Swift.String, buyerId: Swift.String, buyerName: Swift.String, buyerSurname: Swift.String, buyerIdentityNumber: Swift.String, buyerCity: Swift.String, buyerCountry: Swift.String, buyerEmail: Swift.String, buyerPhone: Swift.String, buyerIp: Swift.String, buyerRegistrationAddress: Swift.String, buyerRegistrationDate: Swift.String, buyerLastLoginDate: Swift.String, billingContactName: Swift.String, billingCity: Swift.String, billingCountry: Swift.String, billingAddress: Swift.String, shippingContactName: Swift.String, shippingCity: Swift.String, shippingCountry: Swift.String, shippingAddress: Swift.String, basketItemList: [iyzicoSDK.IyzicoBasketItem])
+  @objc dynamic public func startTopUp(buyerEmail: Swift.String, buyerPhone: Swift.String, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
+  @objc dynamic public func startCashOut(buyerEmail: Swift.String, buyerPhone: Swift.String, walletPrice: Swift.Double, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
+}
+@objc extension iyzicoSDK.Iyzico {
+  @objc dynamic public func initialize(clientIp: Swift.String, clientId: Swift.String, clientSecret: Swift.String, baseUrl: Swift.String, merchantApiKey: Swift.String? = nil, merchantSecretKey: Swift.String? = nil, language: iyzicoSDK.Language)
+  @objc dynamic public func showError(errorDescription: Swift.String?)
+}
+public struct Buyer {
+  public let id: Swift.String?, name: Swift.String?, surname: Swift.String?, identityNumber: Swift.String?
+  public let email: Swift.String?, gsmNumber: Swift.String?, registrationAddress: Swift.String?, city: Swift.String?
+  public let country: Swift.String?, ip: Swift.String?
+  public init(id: Swift.String?, name: Swift.String?, surname: Swift.String?, identityNumber: Swift.String?, email: Swift.String?, gsmNumber: Swift.String?, registrationAddress: Swift.String?, city: Swift.String?, country: Swift.String?, ip: Swift.String?)
 }
 extension UIKit.UIResponder {
   @_Concurrency.MainActor(unsafe) public var parentViewController: UIKit.UIViewController? {
     get
   }
+}
+public struct PWIAddress {
+  public let address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?
+  public init(address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?)
+}
+@nonobjc extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController, containerView: UIKit.UIView? = nil)
+  @_Concurrency.MainActor(unsafe) public func remove()
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func startTimer(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func startTimerWithReturn(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil) -> Foundation.Timer
+}
+@objc public class IyzicoBasketItem : ObjectiveC.NSObject {
+  final public let id: Swift.String?, price: Swift.String?, name: Swift.String?, category1: Swift.String?
+  final public let itemType: Swift.String?, subMerchantKey: Swift.String?, subMerchantPrice: Swift.String?
+  public init(itemCategory: Swift.String, productId: Swift.String?, itemType: Swift.String, itemName: Swift.String, price: Swift.String?, subMerchantKey: Swift.String?, subMerchantPrice: Swift.String?)
+  @objc deinit
+}
+@objc public protocol IyzicoDelegate {
+  @objc func didOperationSuccess(message: Swift.String)
+  @objc func didOperationFailed(state: iyzicoSDK.ResultCode, message: Swift.String)
 }
 extension UIKit.UIColor {
   @nonobjc public class var clearBlue: UIKit.UIColor {
@@ -70,172 +234,6 @@ extension UIKit.UIColor {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class Iyzico {
-  public static let shared: iyzicoSDK.Iyzico
-  weak public static var delegate: iyzicoSDK.IyzicoDelegate?
-  @objc deinit
-}
-extension iyzicoSDK.Iyzico {
-  public func startPayWithIyzico(brand: Swift.String, price: Swift.Double, paidPrice: Swift.Double, currency: iyzicoSDK.Currency = Currency.TRY, enabledInstallments: [Swift.Int], basketId: Swift.String, paymentGroup: iyzicoSDK.PaymentGroup? = .PRODUCT, paymentSource: Swift.String, urlCallback: Swift.String, buyerId: Swift.String, buyerName: Swift.String, buyerSurname: Swift.String, buyerIdentityNumber: Swift.String, buyerCity: Swift.String, buyerCountry: Swift.String, buyerEmail: Swift.String, buyerPhone: Swift.String, buyerIp: Swift.String, buyerRegistrationAddress: Swift.String, buyerRegistrationDate: Swift.String, buyerLastLoginDate: Swift.String, billingContactName: Swift.String, billingCity: Swift.String, billingCountry: Swift.String, billingAddress: Swift.String, shippingContactName: Swift.String, shippingCity: Swift.String, shippingCountry: Swift.String, shippingAddress: Swift.String, basketItemList: [iyzicoSDK.IyzicoBasketItem])
-  public func startTopUp(buyerEmail: Swift.String, buyerPhone: Swift.String, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
-  public func startCashOut(buyerEmail: Swift.String, buyerPhone: Swift.String, walletPrice: Swift.Double, buyerName: Swift.String? = nil, buyerSurname: Swift.String? = nil)
-}
-extension iyzicoSDK.Iyzico {
-  open func initialize(clientIp: Swift.String, clientId: Swift.String, clientSecret: Swift.String, baseUrl: Swift.String, merchantApiKey: Swift.String? = nil, merchantSecretKey: Swift.String? = nil, language: iyzicoSDK.Language)
-}
-public struct PWIAddress {
-  public let address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?
-  public init(address: Swift.String?, contactName: Swift.String?, city: Swift.String?, country: Swift.String?)
-}
-extension UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) public func securePhoneText(number: Swift.String)
-}
-@_hasMissingDesignatedInitializers open class StringConstant {
-  public static let shared: iyzicoSDK.StringConstant
-  final public let frameworkBundle: Swift.String
-  final public let externalBorderName: Swift.String
-  final public let introTitle: Swift.String
-  final public let introBody: Swift.String
-  final public let phoneVCTermString: Swift.String
-  final public let phoneVCTermHighletedString: Swift.String
-  @objc deinit
-}
-extension iyzicoSDK.StringConstant {
-  open func registerFonts()
-}
-public enum ResultCode : Swift.Int, Swift.CaseIterable {
-  case languageError
-  case error
-  case timeOut
-  case phoneError
-  case emailError
-  case brandError
-  case priceError
-  case productIDError
-  case walletPriceError
-  case clientIpError
-  case clientIdError
-  case clientSecretKeyError
-  case baseUrlError
-  case merchantApiKeyError
-  case merchantSecretKeyError
-  case paidPriceError
-  case urlCallbackError
-  case enabledinstallmentError
-  case basketIDError
-  case buyerIDError
-  case buyerNameError
-  case buyerSurnameError
-  case buyerIdentityNumberError
-  case buyerCityError
-  case buyerCountryError
-  case buyerEmailError
-  case buyerPhoneError
-  case buyerIPError
-  case buyerRegistrationAddressError
-  case closedTransactionError
-  case basketProductPriceError
-  case basketProductItemTypeError
-  case billingContactNameError
-  case billingCityError
-  case shippingCountryError
-  case shippingAddressError
-  case emptyBasketError
-  case fullBasketError
-  case basketProductIdError
-  case basketProductNameError
-  case basketProductCategoryError
-  case billingAdressError
-  case shippingContactNameError
-  case shippingCityError
-  case billingCountryError
-  case success
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [iyzicoSDK.ResultCode]
-  public typealias RawValue = Swift.Int
-  public static var allCases: [iyzicoSDK.ResultCode] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum Language : Swift.String, Swift.CaseIterable {
-  case TURKISH
-  case ENGLISH
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [iyzicoSDK.Language]
-  public typealias RawValue = Swift.String
-  public static var allCases: [iyzicoSDK.Language] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum Currency : Swift.String, Swift.CaseIterable {
-  case TRY
-  case USD
-  case EUR
-  case GBP
-  case IRR
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [iyzicoSDK.Currency]
-  public typealias RawValue = Swift.String
-  public static var allCases: [iyzicoSDK.Currency] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum PaymentGroup : Swift.String, Swift.CaseIterable {
-  case PRODUCT
-  case LISTING
-  case SUBSCRIPTION
-  case none
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [iyzicoSDK.PaymentGroup]
-  public typealias RawValue = Swift.String
-  public static var allCases: [iyzicoSDK.PaymentGroup] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum BasketItemType : Swift.String, Swift.CaseIterable {
-  case PHYSICAL
-  case VIRTUAL
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [iyzicoSDK.BasketItemType]
-  public typealias RawValue = Swift.String
-  public static var allCases: [iyzicoSDK.BasketItemType] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct Buyer {
-  public let id: Swift.String?, name: Swift.String?, surname: Swift.String?, identityNumber: Swift.String?
-  public let email: Swift.String?, gsmNumber: Swift.String?, registrationAddress: Swift.String?, city: Swift.String?
-  public let country: Swift.String?, ip: Swift.String?
-  public init(id: Swift.String?, name: Swift.String?, surname: Swift.String?, identityNumber: Swift.String?, email: Swift.String?, gsmNumber: Swift.String?, registrationAddress: Swift.String?, city: Swift.String?, country: Swift.String?, ip: Swift.String?)
-}
-extension Swift.String {
-  public var isBackspace: Swift.Bool {
-    get
-  }
-}
-extension UIKit.UIFont {
-  public class var markProMedium13: UIKit.UIFont {
-    get
-  }
-}
-extension UIKit.UIFont {
-  public static func registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle = Bundle(identifier: StringConstant.shared.frameworkBundle)!)
-}
 public enum Model : Swift.String {
   case simulator, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, unrecognized
   public init?(rawValue: Swift.String)
@@ -250,8 +248,12 @@ extension UIKit.UIDevice {
   }
 }
 extension UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) public func startTimer(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor(unsafe) public func startTimerWithReturn(time: Swift.Int, completionHandler: ((Swift.Int) -> Swift.Void)? = nil) -> Foundation.Timer
+  @_Concurrency.MainActor(unsafe) public func securePhoneText(number: Swift.String)
+}
+extension Swift.String {
+  public var isBackspace: Swift.Bool {
+    get
+  }
 }
 extension iyzicoSDK.ResultCode : Swift.Equatable {}
 extension iyzicoSDK.ResultCode : Swift.Hashable {}
