@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		meP4UGTz+ydRC5ZtsM3X2gcZuJc=
+		jY0CCavoTrwVHXOfOygz7Xxq7sU=
 		</data>
 		<key>BankCell.nib</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		nKkxRapzqC6SxLDBhT285Mchjw0=
+		YdVb1TvOr1MjPDcnCyXt0kuQrOg=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Z5EhIZ6vryKvc7VBPbCXTeA6PFw=
+		R+ja/oHOyEnqRvwAVl1lUl6YqUw=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		nKkxRapzqC6SxLDBhT285Mchjw0=
+		YdVb1TvOr1MjPDcnCyXt0kuQrOg=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Z5EhIZ6vryKvc7VBPbCXTeA6PFw=
+		R+ja/oHOyEnqRvwAVl1lUl6YqUw=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		POG0NWTnoeLCHv7xcFDVnf+Byqk=
+		W2JINRKLFEUSpdzfLFG+nanBc+0=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YNLq1d16H4VNKp59GNjQJYEpJEw=
+		WminErL2hMqM+HgbtgUyHJKzP+8=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -226,11 +226,11 @@
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		POG0NWTnoeLCHv7xcFDVnf+Byqk=
+		W2JINRKLFEUSpdzfLFG+nanBc+0=
 		</data>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		YNLq1d16H4VNKp59GNjQJYEpJEw=
+		WminErL2hMqM+HgbtgUyHJKzP+8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -332,7 +332,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fl64oG7BmRFHmfSwYGBTBQruzd2l/1bNPtbVKQLA7JI=
+			5Uqi02+KF1eTR/CUoxlK7gc2Gtdelf7Dj4oCUz16ZiY=
 			</data>
 		</dict>
 		<key>BankCell.nib</key>
@@ -640,14 +640,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RNn8N5wyDsdlLbzaFyMLB/EQfaESPcFSOBVKH3Xi1t8=
+			dn6oJp9rOXReJSBHYI02qnqYw88E2gaz1eww8nhbAnY=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			um8YaRpuc7GoAzijG1sI4YM0LAOdeXgrmup2GRz4LuE=
+			Z9b9aUWBCB2KtcFT+y+MFvlguQ+lbU7kz2MomasjgLA=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -661,14 +661,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RNn8N5wyDsdlLbzaFyMLB/EQfaESPcFSOBVKH3Xi1t8=
+			dn6oJp9rOXReJSBHYI02qnqYw88E2gaz1eww8nhbAnY=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			um8YaRpuc7GoAzijG1sI4YM0LAOdeXgrmup2GRz4LuE=
+			Z9b9aUWBCB2KtcFT+y+MFvlguQ+lbU7kz2MomasjgLA=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -682,14 +682,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vIOTF2yC22phucg1SxflKBgh9JWa99hggSWP9OmD+7Q=
+			7vDrRChTbKh8mafKRgTP3Izap2Xyp7YjA0EJEsLKs40=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3SLdXAeiq6j8s+Vym9fYti6cpZXlLZCygdED0MzHPsQ=
+			3XvczuLMvyvf9GOJhKRt98OpFg/ubvwOlLV2jON5Udg=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -703,14 +703,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vIOTF2yC22phucg1SxflKBgh9JWa99hggSWP9OmD+7Q=
+			7vDrRChTbKh8mafKRgTP3Izap2Xyp7YjA0EJEsLKs40=
 			</data>
 		</dict>
 		<key>Modules/iyzicoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3SLdXAeiq6j8s+Vym9fYti6cpZXlLZCygdED0MzHPsQ=
+			3XvczuLMvyvf9GOJhKRt98OpFg/ubvwOlLV2jON5Udg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
