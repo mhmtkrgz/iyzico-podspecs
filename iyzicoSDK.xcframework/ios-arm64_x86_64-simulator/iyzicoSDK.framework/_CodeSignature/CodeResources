@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		jY0CCavoTrwVHXOfOygz7Xxq7sU=
+		meP4UGTz+ydRC5ZtsM3X2gcZuJc=
 		</data>
 		<key>BankCell.nib</key>
 		<data>
@@ -35,6 +35,34 @@
 		<key>EmailSupportVC.nib</key>
 		<data>
 		uI86sSRpbbqgf2/tM9Ga18UrnYc=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/Info.plist</key>
+		<data>
+		26B3eegx0KY2EUvzEe5wRec6VYc=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/Pods_iyzicoSDK</key>
+		<data>
+		lf92JaTTsotKIEr6tm3lx5SDL90=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeDirectory</key>
+		<data>
+		rhzdtglO/FNKQVUu/3wgtAF+wUE=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		nAuv623GaNCPgBGE+xDfVQdpKMM=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Xn1C1vk/p615yTSRfeHgUrWDtK0=
+		</data>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>Headers/iyzicoSDK-Swift.h</key>
 		<data>
@@ -332,7 +360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Uqi02+KF1eTR/CUoxlK7gc2Gtdelf7Dj4oCUz16ZiY=
+			fl64oG7BmRFHmfSwYGBTBQruzd2l/1bNPtbVKQLA7JI=
 			</data>
 		</dict>
 		<key>BankCell.nib</key>
@@ -375,6 +403,55 @@
 			<key>hash2</key>
 			<data>
 			ZBqFbhmT5QsxOkUpvcIVUGxFVO0ssPpax/nq/7Vgea4=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YdinL0f+QDDtiqt4xieTa0IjT/FRX76jmubRNydaeZ0=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/Pods_iyzicoSDK</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a9nR60XeOVfFAbBkl+XwWf3KU4vlDmEY4Oiu1BdSID0=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GCjjwIISL1aWV4tgaQMse7wLtoahc6cLvjfynITszZw=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rWTTykUGSlwlzAaU6g3H9MixTpzIlFlg80nd2mA0z6s=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wPYFC9Wx7gtjPVb8uM2/euvZR6wejIbvZb0wgMdLkYc=
+			</data>
+		</dict>
+		<key>Frameworks/Pods_iyzicoSDK.framework/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>Headers/iyzicoSDK-Swift.h</key>
