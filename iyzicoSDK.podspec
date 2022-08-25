@@ -12,12 +12,11 @@ Pod::Spec.new do |s|
   s.author           = { "iyzico" => "integration@iyzico.com" } 
   s.ios.deployment_target = '11.0'
   s.ios.vendored_frameworks = 'iyzicoSDK.xcframework'
-  s.source        = { :git => 'https://github.com/iyzico/iyzico-podspecs.git', :tag => s.version }
+  s.source        = { :git => 'https://github.com/iyzico/iyzico-podspecs.git', :tag => s.version, :branch => branch }
   s.swift_version = '5.0'
   s.exclude_files = "Classes/Exclude"
 
   s.dependency 'Alamofire', '~> 5.4.1'
-  s.dependency 'IQKeyboardManagerSwift', '~> 6.5.6'
   s.dependency 'lottie-ios', '~> 3.2.1'
   s.dependency 'SVGKit', '~> 3.0.0'
   s.dependency 'CocoaLumberjack/Core', '~> 3.7.2'
