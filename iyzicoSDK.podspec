@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.exclude_files = "Classes/Exclude"
 
-  s.dependency 'Alamofire', '~> 5.4.1'
   s.dependency 'lottie-ios', '~> 3.2.1'
   s.dependency 'SVGKit', '~> 3.0.0'
   s.dependency 'CocoaLumberjack/Core', '~> 3.7.2'
